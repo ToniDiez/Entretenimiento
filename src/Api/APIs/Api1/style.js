@@ -253,6 +253,12 @@ const DivType = styled.div`
   flex-direction: row;
   margin:-1.5em
 `;
+const PN = styled.p`
+font-weight:bold;
+::first-letter {
+    text-transform: capitalize;
+  }
+`;
 const P = styled.p`
 ::first-letter {
     text-transform: capitalize;
@@ -264,6 +270,7 @@ text-decoration:underline;
     text-transform: capitalize;
   }
 `;
+
 export {
   DivImg,
   DIV,
@@ -279,5 +286,6 @@ export {
   ImgIcon,
   DivType,
   P,
-  H1
+  H1,
+  PN
 };

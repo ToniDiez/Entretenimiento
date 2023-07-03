@@ -13,6 +13,7 @@ import {
   ImgIcon,
   DivType,
   P,
+  PN,
   H1,
 } from "./style";
 import ProgressBar from "./ProgressBar";
@@ -44,8 +45,8 @@ export default function Card({ results }) {
             <div>
               <H1>{name}</H1>
               <div>
-                <P>Nº Pokedex: {id}</P>
-                <P>Type:</P>
+                <PN>Nº Pokedex: {id}</PN>
+                <PN>Type:</PN>
                 <DivType>
                   {types.map((type, typeIndex) => (
                     <>
@@ -71,7 +72,7 @@ export default function Card({ results }) {
                   <DivStats>
                     {stats.map((stat, statsIndex) => (
                       <React.Fragment key={statsIndex}>
-                        <P>{stat.stat.name}:</P>
+                        <PN>{stat.stat.name}:</PN>
                         <P>{stat.base_stat}</P>
                         <ProgressBar value={stat.base_stat}></ProgressBar>
                       </React.Fragment>
@@ -79,9 +80,9 @@ export default function Card({ results }) {
                   </DivStats>
                   <DivData>
                     <div>
-                      <P>Nº Pokedex: {id}</P>
-                      <P>Weight: {weight} kg</P>
-                      <P>Type:</P>
+                      <PN>Nº Pokedex: {id}</PN>
+                      <PN>Weight: {weight} kg</PN>
+                      <PN>Type:</PN>
                       <DivType>
                         {types.map((type, typeIndex) => (
                           <>
@@ -94,8 +95,8 @@ export default function Card({ results }) {
                     <div>
                       {abilities.map((ability, abilitiesIndex) => (
                         <React.Fragment key={abilitiesIndex}>
-                          <P>Ability: {ability.ability.name}</P>
-                          <P>Hidden Ability: {ability.slot}</P>
+                          <PN>Ability: {ability.ability.name}</PN>
+                          <PN>Hidden Ability: {ability.slot}</PN>
                         </React.Fragment>
                       ))}
                     </div>
