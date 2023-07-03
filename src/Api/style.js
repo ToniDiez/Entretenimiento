@@ -19,4 +19,14 @@ const DivContainer= styled.div`
   flex-direction: column;
 `;
 
-export {Div,DivContainer};
+const Select= styled.select`
+outline: none;
+  max-width: 190px;
+  padding: 8px;
+  background-color: #d4cbcb;
+  border: 4px solid #000000;
+  width: auto;
+  font-weight: bold;
+  font-style: italic;
+  `;
+export {Div,DivContainer,Select};

@@ -63,6 +63,7 @@ const ContainerSpinner = styled.div`
   align-content:center;
   background:linear-gradient(to bottom left, #FF7F50, #FFA500);
   width:80vw;
+  height:100vh
 `;
 
 export {Container, ButtonBlack,Input,ContainerSpinner};

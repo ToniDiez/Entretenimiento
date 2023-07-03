@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
-import {Div,DivContainer } from "./style.js";
+import {Div,DivContainer,Select } from "./style.js";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Api1 from "./APIs/Api1/index.js";
 import Api2 from "./APIs/Api2/index.js";
 import Api3 from "./APIs/Api3/index.js";
+import { ContainerSpinner } from "../GlobalStyles.js";
 
 const options = [
   {
-    label: "",
+    label: "Selecciona",
     value: "",
   },
   {
@@ -24,10 +25,6 @@ const options = [
     value: "Rick",
   },
 ];
-
-let api1 =``;
-let api2 =``;
-let api3 = `https://rickandmortyapi.com/api/character/?page=1`;
 
 const Api = () => {
   function Eleccion() {
@@ -51,9 +48,9 @@ const Api = () => {
       );
     } else {
       return (
-        <>
-          <h1>Selecciona una Api entre la tres que estan disponibles</h1>
-        </>
+        <ContainerSpinner>
+          <h1><u>Selecciona una Api entre la tres que estan disponibles</u></h1>
+        </ContainerSpinner>
       );
     }
   }
@@ -70,12 +67,12 @@ const Api = () => {
     <DivContainer>
       <h1>Funciona Api</h1>
       <form action="#">
-        <label>Selecciona una Api:</label>
-        <select value={api} onChange={(e) => setApi(e.target.value)}>
+        <h4>Selecciona una Api:</h4>
+        <Select value={api} onChange={(e) => setApi(e.target.value)}>
           {options.map((option) => (
             <option value={option.value}>{option.label}</option>
           ))}
-        </select>
+        </Select>
       </form>
       </DivContainer>
       <br></br>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ButtonDiv, DIV } from "./style.js";
-import { ButtonBlack, Input } from "../../../GlobalStyles.js";
+import { ButtonBlack, ContainerSpinner, Input } from "../../../GlobalStyles.js";
 import PokeCard from "./PokeCard.js";
 import logo from "../../../Assets/GIF011.gif";
 import axios from "axios";
@@ -85,9 +85,9 @@ const Api1 = () => {
   };
   if (loading) {
     return (
-      <div>
+      <ContainerSpinner>
         <img src={logo} alt="loading..." />
-      </div>
+      </ContainerSpinner>
     );
   } else {
     return (
@@ -95,9 +95,11 @@ const Api1 = () => {
         <h1>Bienvenido a la Api de Pokemon</h1>
         <br></br>
         <Buttons></Buttons>
+        <br></br>
         <DIV>
           <PokeCard results={pokeData}></PokeCard>
         </DIV>
+        <br></br>
         <Buttons></Buttons>
       </>
     );

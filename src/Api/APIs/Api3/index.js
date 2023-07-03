@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { DIV, ButtonDiv } from "./style.js";
-import { ButtonBlack, Input } from "../../../GlobalStyles.js";
+import { ButtonBlack, ContainerSpinner, Input } from "../../../GlobalStyles.js";
 import Card from "./Card.js";
 import logo from "../../../Assets/portal-rick-and-morty.gif"
 
@@ -83,9 +83,9 @@ const Api3 = () => {
   };
   if (loading) {
     return (
-      <>
+      <ContainerSpinner>
         <img src={logo} alt="loading..." />
-      </>
+      </ContainerSpinner>
     );
   } else {
     return (
