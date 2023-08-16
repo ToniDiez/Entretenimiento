@@ -1,9 +1,9 @@
 
 import { Routes, Route } from "react-router-dom";
-import Inicio from "./Inicio/index";
+import Inicio from "./Pages/Inicio/index";
 import Api from "./Api/index";
-import Prox1 from "./Prox1";
-import Prox2 from "./Prox2";
+import Redux from "./Pages/useRedux";
+import Prox2 from "./Pages/Prox2";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio />}></Route>
         <Route path="Api" element={<Api />}></Route>
-        <Route path="Prox1" element={<Prox1 />}></Route>
+        <Route path="Redux" element={<Redux />}></Route>
         <Route path="Prox2" element={<Prox2 />}></Route>
       </Routes>
     </>

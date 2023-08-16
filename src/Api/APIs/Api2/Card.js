@@ -18,7 +18,6 @@ export default function Card({ results, onDelete }) {
         let { id, symbol, name, image, last_updated } = x;
 
         return (
-          //poner div que se ponga en medio
            <div>
           <ButtonPlus key={id} onClick={() => handleCardClick(id)}>
             <Img src={image} alt="" />
