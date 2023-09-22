@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/Entretenimiento/build/" element={<Inicio />}></Route>
-        <Route path="/Entretenimiento/build/Api" element={<Api />}></Route>
-        <Route path="/Entretenimiento/build/Redux" element={<Redux />}></Route>
-        <Route path="/Entretenimiento/build/Prox2" element={<Prox2 />}></Route>
+        <Route path="/" element={<Inicio />}></Route>
+        <Route path="Api" element={<Api />}></Route>
+        <Route path="Redux" element={<Redux />}></Route>
+        <Route path="Prox2" element={<Prox2 />}></Route>
       </Routes>
     </>
   );

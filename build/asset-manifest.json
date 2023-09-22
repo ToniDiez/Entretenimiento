@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Entretenimiento/build/static/js/main.2c98567f.js",
+    "main.js": "/Entretenimiento/build/static/js/main.0a17dba4.js",
     "static/js/787.77352a6b.chunk.js": "/Entretenimiento/build/static/js/787.77352a6b.chunk.js",
     "static/media/portal-rick-and-morty.gif": "/Entretenimiento/build/static/media/portal-rick-and-morty.f7a3a35106b3766c24d4.gif",
     "static/media/bitcoin-03.gif": "/Entretenimiento/build/static/media/bitcoin-03.40cb03d6f1cfeff46c6a.gif",
@@ -25,10 +25,10 @@
     "static/media/electric.svg": "/Entretenimiento/build/static/media/electric.72daa869a6821c8713e429df5baa4eee.svg",
     "static/media/grass.svg": "/Entretenimiento/build/static/media/grass.580b538ada83319ec191a117cd6deba1.svg",
     "static/media/normal.svg": "/Entretenimiento/build/static/media/normal.2ba66dd583ebf70eb414a0cfd20a48be.svg",
-    "main.2c98567f.js.map": "/Entretenimiento/build/static/js/main.2c98567f.js.map",
+    "main.0a17dba4.js.map": "/Entretenimiento/build/static/js/main.0a17dba4.js.map",
     "787.77352a6b.chunk.js.map": "/Entretenimiento/build/static/js/787.77352a6b.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.2c98567f.js"
+    "static/js/main.0a17dba4.js"
   ]
 }
