@@ -13,7 +13,7 @@ const DIV = styled.div`
     margin-left: 1em;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     grid-template-columns: 1fr;
     margin-left: 0.5em;
   }
@@ -134,6 +134,12 @@ const ButtonPoke = styled.button`
   &:active {
     box-shadow: #d6d6e7 0 3px 7px inset;
     transform: translateY(2px);
+  }
+  @media screen and (max-width: 768px) {
+    /* Cambios de estilo para pantallas más pequeñas */
+    font-size: 16px;
+    padding: 8px 16px;
+    width: 40vw;
   }
 `;
 const slideOut = keyframes`
