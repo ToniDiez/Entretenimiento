@@ -139,7 +139,7 @@ const ButtonPoke = styled.button`
     /* Cambios de estilo para pantallas más pequeñas */
     font-size: 16px;
     padding: 8px 16px;
-    width: 50vw;
+    width: 65vw;
   }
 `;
 const slideOut = keyframes`
