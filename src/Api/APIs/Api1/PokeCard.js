@@ -32,33 +32,34 @@ export default function Card({ results }) {
   };
 
   if (results) {
-    display = results.map((x, index) => {
-      let { id, name, types, sprites, abilities, stats, weight } = x;
+    display = results.map((pokemon) => {
+      const { id, name, types, sprites, abilities, stats, weight } = pokemon;
+      const pokemonIndex = id;
 
       return (
-        <React.Fragment key={index}>
+        <React.Fragment key={pokemonIndex}>
           <ButtonPoke
             type={types[0].type.name}
-            onClick={() => togglePopup(index)}
+            onClick={() => togglePopup(pokemonIndex)}
           >
             <Img src={sprites.front_default} />
             <div>
               <H1>{name}</H1>
               <div>
-                <PN>Nº Pokedex: {id}</PN>
-                <PN>Type:</PN>
-                <DivType>
-                  {types.map((type, typeIndex) => (
-                    <>
-                      <P key={typeIndex}>{type.type.name}</P>
-                      <ImgIcon src={typeIcons[type.type.name]}></ImgIcon>
-                    </>
-                  ))}
-                </DivType>
-              </div>
+  <PN>Nº Pokedex: {id}</PN>
+  <PN>Type:</PN>
+  <DivType>
+    {types.map((type, typeIndex) => (
+      <div key={typeIndex}>
+        <P>{type.type.name}</P>
+        <ImgIcon src={typeIcons[type.type.name]}></ImgIcon>
+      </div>
+    ))}
+  </DivType>
+</div>
             </div>
           </ButtonPoke>
-          {openPopups.includes(index) && (
+          {openPopups.includes(pokemonIndex) && (
             <PopupContainer>
               <PopupContent type={types[0].type.name}>
                 <DivImg>
@@ -102,7 +103,9 @@ export default function Card({ results }) {
                     </div>
                   </DivData>
                 </Div>
-                <MyButton onClick={() => togglePopup(index)}>Cerrar</MyButton>
+                <MyButton onClick={() => togglePopup(pokemonIndex)}>
+                  Cerrar
+                </MyButton>
               </PopupContent>
             </PopupContainer>
           )}

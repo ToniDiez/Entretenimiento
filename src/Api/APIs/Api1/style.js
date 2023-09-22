@@ -7,6 +7,16 @@ const DIV = styled.div`
   gap: 10px 20px;
   margin-left: 2em;
   margin-bottom: 0.5em;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 1em;
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    margin-left: 0.5em;
+  }
 `;
 const ButtonDiv = styled.div`
   display: flex;
@@ -14,6 +24,15 @@ const ButtonDiv = styled.div`
   align-items: center;
   flex-direction: row;
   width: 50vw;
+
+  @media screen and (max-width: 768px) {
+    width: 80vw;
+  }
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const Img = styled.img`
   background: white;
@@ -21,11 +40,16 @@ const Img = styled.img`
   width: 100px;
   height: 100px;
   box-shadow: 2px 2px 2px black;
+
+  @media screen and (max-width: 768px) {
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 const ButtonPoke = styled.button`
   align-items: center;
-  height: 30vh;
+  height: 45vh;
   appearance: none;
   background: ${({ type }) => {
     switch (type) {
@@ -144,6 +168,16 @@ const PopupContainer = styled.div`
   border-radius: 4px;
   z-index: 9999;
   animation: ${(props) => (props.isOpen ? slideIn : slideOut)} 0.3s ease-in-out;
+
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+    height: 70vh;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 95vw;
+    height: 60vh;
+  }
 `;
 
 const PopupContent = styled.div`
@@ -208,6 +242,10 @@ const MyButton = styled.button`
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    padding: 8px 16px;
+  }
 `;
 const Div = styled.div`
   display: flex;
@@ -216,6 +254,14 @@ const Div = styled.div`
   flex-direction: row;
   width: 65vw;
   height: auto;
+
+  @media screen and (max-width: 768px) {
+    width: 80vw;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 90vw;
+  }
 `;
 const DivImg = styled.div`
   display: flex;
@@ -232,6 +278,11 @@ const DivStats = styled.div`
   width: 70vw;
   height: 40vh;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    width: 80vw;
+    height: 30vh;
+  }
 `;
 const DivData = styled.div`
   display: flex;
@@ -241,10 +292,20 @@ const DivData = styled.div`
   flex-direction: row;
   width: 50vw;
   height: 40vh;
+
+  @media screen and (max-width: 768px) {
+    width: 70vw;
+    height: 30vh;
+  }
 `;
 const ImgIcon = styled.img`
   width: 2vw;
   height: 2vh;
+
+  @media screen and (max-width: 768px) {
+    width: 4vw;
+    height: 4vh;
+  }
 `;
 const DivType = styled.div`
   display: flex;
