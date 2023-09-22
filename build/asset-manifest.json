@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.js": "/Entretenimiento/build/static/js/main.0a17dba4.js",
+    "static/js/787.77352a6b.chunk.js": "/Entretenimiento/build/static/js/787.77352a6b.chunk.js",
+    "static/media/portal-rick-and-morty.gif": "/Entretenimiento/build/static/media/portal-rick-and-morty.f7a3a35106b3766c24d4.gif",
+    "static/media/bitcoin-03.gif": "/Entretenimiento/build/static/media/bitcoin-03.40cb03d6f1cfeff46c6a.gif",
+    "static/media/GIF011.gif": "/Entretenimiento/build/static/media/GIF011.de3a32b25b4044814c80.gif",
+    "static/media/pokeball-re.jpg": "/Entretenimiento/build/static/media/pokeball-re.efeb48fc4edea6b83967.jpg",
+    "static/media/dragon.svg": "/Entretenimiento/build/static/media/dragon.7be68bdd50a8726d31107a75e9b7f883.svg",
+    "static/media/fire.svg": "/Entretenimiento/build/static/media/fire.5c58c6e24c5288994807a442e902cbf2.svg",
+    "static/media/psychic.svg": "/Entretenimiento/build/static/media/psychic.b5b7f4e113279381acaf4c582078a2ae.svg",
+    "static/media/fairy.svg": "/Entretenimiento/build/static/media/fairy.d7b29a8bf19ba9aecaf78324122691db.svg",
+    "static/media/bug.svg": "/Entretenimiento/build/static/media/bug.f9a25ddda09ee2e927b08b89a6430e43.svg",
+    "static/media/rock.svg": "/Entretenimiento/build/static/media/rock.eea1eac796891a211373893a7f3918c4.svg",
+    "static/media/ice.svg": "/Entretenimiento/build/static/media/ice.bd8d1e5321aa12fc11265e7e93375537.svg",
+    "static/media/ghost.svg": "/Entretenimiento/build/static/media/ghost.8c97c1068166fa34722bc16fb5dd3473.svg",
+    "static/media/flying.svg": "/Entretenimiento/build/static/media/flying.5c90d06778452df3ce81c9f219582f71.svg",
+    "static/media/fighting.svg": "/Entretenimiento/build/static/media/fighting.372b8c5d52010c05c12c4edb1d45488e.svg",
+    "static/media/poison.svg": "/Entretenimiento/build/static/media/poison.239752ec99a6f7c0f513e8a5cd6be20a.svg",
+    "static/media/steel.svg": "/Entretenimiento/build/static/media/steel.e8cb36b995958486ae2ecf76a9c4f591.svg",
+    "static/media/ground.svg": "/Entretenimiento/build/static/media/ground.457a08fd1f225c575dd0c30e2a3de253.svg",
+    "index.html": "/Entretenimiento/build/index.html",
+    "static/media/dark.svg": "/Entretenimiento/build/static/media/dark.b81991e75f526826a49d9a0b033e39bb.svg",
+    "static/media/water.svg": "/Entretenimiento/build/static/media/water.5df17759051a2e1c0f40e0b6820730d7.svg",
+    "static/media/electric.svg": "/Entretenimiento/build/static/media/electric.72daa869a6821c8713e429df5baa4eee.svg",
+    "static/media/grass.svg": "/Entretenimiento/build/static/media/grass.580b538ada83319ec191a117cd6deba1.svg",
+    "static/media/normal.svg": "/Entretenimiento/build/static/media/normal.2ba66dd583ebf70eb414a0cfd20a48be.svg",
+    "main.0a17dba4.js.map": "/Entretenimiento/build/static/js/main.0a17dba4.js.map",
+    "787.77352a6b.chunk.js.map": "/Entretenimiento/build/static/js/787.77352a6b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.0a17dba4.js"
+  ]
+}
