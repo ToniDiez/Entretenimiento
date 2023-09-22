@@ -12,6 +12,10 @@ const Nav = styled.nav`
   top:0;
   opacity:95%;
   box-shadow:5px 5px 5px black;
+  @media screen and (max-width: 500px) {
+   width:100%
+
+  }
 `;
 const Button = styled.button`
 margin-top:1em;
@@ -35,6 +39,10 @@ margin-top:1em;
    opacity:80%;
    height:auto;
    border-radius:4em;
+  }
+  @media screen and (max-width: 500px) {
+     width:18vw;
+     margin-left: 0px;
   }
 `;
 
