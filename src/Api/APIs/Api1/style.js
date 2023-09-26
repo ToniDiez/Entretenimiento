@@ -42,8 +42,8 @@ const Img = styled.img`
   box-shadow: 2px 2px 2px black;
 
   @media screen and (max-width: 768px) {
-    width: 80px;
-    height: 80px;
+    width: 20vw;
+    height: 8vh;
   }
 `;
 
@@ -239,6 +239,10 @@ const PopupContent = styled.div`
   padding: 20px;
   border-radius: 4px;
   background-image:url(${image})left bottom no-repeat;
+  @media screen and (max-width: 500px) {
+    width: 83%;
+    height:95%;
+  }
 `;
 
 const MyButton = styled.button`
@@ -285,7 +289,7 @@ const DivStats = styled.div`
   height: 40vh;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 500px) {
     width: 80vw;
     height: 30vh;
   }
@@ -297,11 +301,10 @@ const DivData = styled.div`
   align-items: center;
   flex-direction: row;
   width: 50vw;
-  height: 40vh;
+  height: 30vh;
 
-  @media screen and (max-width: 768px) {
-    width: 70vw;
-    height: 30vh;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
   }
 `;
 const ImgIcon = styled.img`
@@ -318,7 +321,10 @@ const DivType = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin:-1.5em
+  margin:-1.5em;
+  @media screen and (max-width: 500px) {
+    flex-direction: row;
+  }
 `;
 const PN = styled.p`
 font-weight:bold;
@@ -335,6 +341,9 @@ const H1 = styled.h1`
 text-decoration:underline;
 ::first-letter {
     text-transform: capitalize;
+  }
+  @media screen and (max-width: 500px) {
+    font-size:25px;
   }
 `;
 

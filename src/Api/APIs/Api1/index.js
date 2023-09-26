@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ButtonDiv, DIV } from "./style.js";
+import { ButtonDiv, DIV,H1 } from "./style.js";
 import { ButtonBlack, ContainerSpinner, Input } from "../../../GlobalStyles.js";
 import PokeCard from "./PokeCard.js";
 import logo from "../../../Assets/GIF011.gif";
@@ -92,7 +92,7 @@ const Api1 = () => {
   } else {
     return (
       <>
-        <h1>Bienvenido a la Api de Pokemon</h1>
+        <H1>Bienvenido a la Api de Pokemon</H1>
         <br></br>
         <Buttons></Buttons>
         <br></br>

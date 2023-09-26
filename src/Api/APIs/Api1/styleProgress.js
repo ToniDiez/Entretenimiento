@@ -4,6 +4,10 @@ const Container = styled.div`
   width: 250%;
   height: 20px;
   border-radius: 10px;
+  @media screen and (max-width: 500px) {
+    width: 40vw;
+    
+  }
 `;
 
 const Progress = styled.div`

@@ -16,9 +16,8 @@ const Div = styled.div`
     margin: 0.5em;
   }
 
-  @media screen and (max-width: 480px) {
-    /* Estilos para pantallas muy pequeñas (ejemplo: smartphones) */
-    margin: 0.25em;
+  @media screen and (max-width: 500px) {
+    margin-right:2.5em;
   }
 `;
 
@@ -49,14 +48,10 @@ const Select = styled.select`
   font-weight: bold;
   font-style: italic;
 
-  @media screen and (max-width: 768px) {
-    /* Estilos para pantallas más pequeñas (ejemplo: tablets) */
-    max-width: 150px;
-  }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 500px) {
     /* Estilos para pantallas muy pequeñas (ejemplo: smartphones) */
-    max-width: 100px;
+    width: 100vw;
   }
 `;
 export {Div,DivContainer,Select};

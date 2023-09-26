@@ -89,6 +89,7 @@ export default function Card({ results }) {
                           <>
                             <P key={typeIndex}>{type.type.name}</P>
                             <ImgIcon src={typeIcons[type.type.name]}></ImgIcon>
+                            <p></p>
                           </>
                         ))}
                       </DivType>

@@ -42,7 +42,10 @@ margin-top:1em;
   }
   @media screen and (max-width: 500px) {
      width:18vw;
-     margin-left: 0px;
+     margin-left: -2em;
+     font-size: 12px;
+     text-align: left;
+     
   }
 `;
 
